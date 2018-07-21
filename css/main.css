@@ -446,6 +446,8 @@ body {
   margin: 0 auto;
   padding: 100px 0 70px;
   width: calc(100% - 252px);
+  opacity: 0.9;
+  z-index: -1;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -1660,6 +1662,8 @@ pre .javascript .function {
   font-family: UKIJ Ekran;
 }
 .sidebar {
+  opacity: 0.9;
+  z-index: -1;
   position: fixed;
   right: 0;
   top: 0;
@@ -1823,7 +1827,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a826ff;
+  background: #c732ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3119,5 +3123,17 @@ pre .javascript .function {
   }
   .pagination {
     margin: 8px 0 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/8-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  #footer a {
+    color: #eee;
   }
 }
