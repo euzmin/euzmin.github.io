@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="树状数组BIT," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="题目链接：戳这里   题意：t组样例，每组给n个数和q次查询，求每次查询中[1, l]和[r, n]中不同的数的个数">
+<meta name="keywords" content="树状数组BIT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/07/20/hello-world/index.html">
+<meta property="og:title" content="J-Different Integers 【离线+树状数组】">
+<meta property="og:url" content="http://yoursite.com/2018/07/22/J-Different Integers 【离线+树状数组】/index.html">
 <meta property="og:site_name" content="zmin">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="题目链接：戳这里   题意：t组样例，每组给n个数和q次查询，求每次查询中[1, l]和[r, n]中不同的数的个数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-20T14:25:03.169Z">
+<meta property="og:updated_time" content="2018-07-22T14:50:54.964Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="J-Different Integers 【离线+树状数组】">
+<meta name="twitter:description" content="题目链接：戳这里   题意：t组样例，每组给n个数和q次查询，求每次查询中[1, l]和[r, n]中不同的数的个数">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/20/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/22/J-Different Integers 【离线+树状数组】/"/>
 
 
 
 
 
-  <title>Hello World | zmin</title>
+  <title>J-Different Integers 【离线+树状数组】 | zmin</title>
   
 
 
@@ -262,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/20/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/22/J-Different Integers 【离线+树状数组】/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zmin">
@@ -279,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">J-Different Integers 【离线+树状数组】</h1>
         
 
         <div class="post-meta">
@@ -291,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-20T22:25:03+08:00">
-                2018-07-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-22T21:29:22+08:00">
+                2018-07-22
               </time>
             
 
@@ -301,6 +302,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/01-数据结构-2-线段树ST-树状数组BIT/" itemprop="url" rel="index">
+                    <span itemprop="name">01.数据结构 - (2)线段树ST & 树状数组BIT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -329,15 +352,22 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>题目链接：<a href="https://www.nowcoder.com/acm/contest/139/J" target="_blank" rel="noopener">戳这里</a> </p>
+<blockquote>
+<p>题意：t组样例，每组给n个数和q次查询，求每次查询中[1, l]和[r, n]中不同的数的个数<br><a id="more"></a></p>
+</blockquote>
+<blockquote>
+<p>解题思路：</p>
+<p>首先将数组×2，这样就可以由求[1, l] 和 [r, n]区间转化为求[r, n + l]区间。再把查询按照r从小到大排序，之所以这样排序，是为了一边修改前缀和，一边存储答案。</p>
+<p>在更新点的时候，我们要用一个last[]数组记录当前数字出现的上一个位置，如果再次出现该数字，则</p>
+<blockquote>
+<p>add(last[num[i]], -1);</p>
+<p>add(i, 1) ;</p>
+</blockquote>
+<p>这是用了<strong>差分数组</strong>的思路，把last[num[i]]的值-1，把i的值+1，最终得到的getsum(i)值是不变的，这样就减少了很多不必要的修改。</p>
+</blockquote>
+<p>附ac代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">#define lowbit(x) (x&amp;-x)</span><br><span class="line">const int maxn = 4 * 1e5 + 10;</span><br><span class="line">typedef int ll;</span><br><span class="line">int nu[maxn];</span><br><span class="line">int last[maxn];</span><br><span class="line">int sum[maxn];</span><br><span class="line">int n, q;</span><br><span class="line">int res[maxn];</span><br><span class="line">struct nod</span><br><span class="line">&#123;</span><br><span class="line">    int id;</span><br><span class="line">    int l;</span><br><span class="line">    int r;</span><br><span class="line">&#125;qy[maxn];</span><br><span class="line">bool cmp(nod a, nod b)</span><br><span class="line">&#123;</span><br><span class="line">    return a.r &lt; b.r;</span><br><span class="line">&#125;</span><br><span class="line">void add(int *r, int pos, int v)</span><br><span class="line">&#123;</span><br><span class="line">    while(pos &lt;= n)</span><br><span class="line">    &#123;</span><br><span class="line">        r[pos] += v;</span><br><span class="line">        pos += lowbit(pos);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">int getsum(int *r, int pos)</span><br><span class="line">&#123;</span><br><span class="line">    ll ans = 0;</span><br><span class="line">  while(pos &gt; 0)</span><br><span class="line">  &#123;</span><br><span class="line">      ans += r[pos];</span><br><span class="line">      pos -= lowbit(pos);</span><br><span class="line">  &#125;</span><br><span class="line">  return ans;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line"> </span><br><span class="line">    while(~scanf(&quot;%d %d&quot;, &amp;n, &amp;q))</span><br><span class="line">    &#123;</span><br><span class="line">        memset(last, 0, sizeof(last));</span><br><span class="line">        memset(sum, 0, sizeof(sum));</span><br><span class="line">        for(int i = 1; i &lt;= n; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(&quot;%d&quot;, nu+i);</span><br><span class="line">            nu[i + n] = nu[i];</span><br><span class="line">        &#125;</span><br><span class="line">         </span><br><span class="line">        int u, v;</span><br><span class="line">        for(int i = 0; i &lt; q; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(&quot;%d %d&quot;, &amp;u, &amp;v);</span><br><span class="line">            qy[i].id = i;</span><br><span class="line">            qy[i].l = v;</span><br><span class="line">            qy[i].r = n + u;</span><br><span class="line">         //   printf(&quot;%d %d %d\n&quot;, qy[i].l, qy[i].r, i);</span><br><span class="line">        &#125;</span><br><span class="line">        n &lt;&lt;= 1;</span><br><span class="line">        sort(qy, qy + q, cmp);</span><br><span class="line">        int len = 0;</span><br><span class="line">        for(int i = 1; i &lt;= n; ++i)</span><br><span class="line">        &#123;</span><br><span class="line">       //         printf(&quot;%d %d i vis[nu[i]] \n&quot;, i, vis[nu[i]]);</span><br><span class="line">                if(last[nu[i]]) add(sum, last[nu[i]], -1);</span><br><span class="line">                add(sum, i, 1);</span><br><span class="line">                last[nu[i]] = i;</span><br><span class="line">                while(qy[len].r == i &amp;&amp; len &lt; q)</span><br><span class="line">                &#123;</span><br><span class="line">//                  printf(&quot;%d %di %d %di&quot;, getsum(sum, qy[len].r), qy[len].r, getsum(sum, qy[len].l - 1), qy[len].l - 1);</span><br><span class="line">                    res[qy[len].id] = getsum(sum, qy[len].r) - getsum(sum, qy[len].l - 1);</span><br><span class="line">                    ++len;</span><br><span class="line">                &#125;</span><br><span class="line">                if(len == q) break;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = 0; i &lt; q; ++i)</span><br><span class="line">            printf(&quot;%d\n&quot;, res[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -353,6 +383,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/树状数组BIT/" rel="tag"># 树状数组BIT</a>
+          
+        </div>
+      
 
       
       
@@ -362,15 +398,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/20/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/22/J-Different Integers 【离线+树状数组】/" rel="prev" title="J-Different Integers 【离线+树状数组】">
-                J-Different Integers 【离线+树状数组】 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -422,17 +458,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -492,22 +519,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
