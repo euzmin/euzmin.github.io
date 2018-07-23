@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="LGV算法," />
 
 
 
@@ -79,17 +79,22 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="题目链接：戳这里参考博客：戳这里  先备知识 LGV 算法 (Lindström–Gessel–Viennot lemma)  从{a1,a2,a3,...an}到{b1,b2,...bn}的不相交路径的条数">
+<meta name="keywords" content="LGV算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/07/20/hello-world/index.html">
+<meta property="og:title" content="2018牛客网暑期多校 A-AMonotonic Matrix【LGV算法】">
+<meta property="og:url" content="http://yoursite.com/2018/07/23/1/index.html">
 <meta property="og:site_name" content="zmin">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="题目链接：戳这里参考博客：戳这里  先备知识 LGV 算法 (Lindström–Gessel–Viennot lemma)  从{a1,a2,a3,...an}到{b1,b2,...bn}的不相交路径的条数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-20T14:25:03.169Z">
+<meta property="og:image" content="http://yoursite.com/2018/07/23/1/1-6.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/23/1/1-4.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/23/1/1-7.jpg">
+<meta property="og:updated_time" content="2018-07-23T15:46:51.772Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="2018牛客网暑期多校 A-AMonotonic Matrix【LGV算法】">
+<meta name="twitter:description" content="题目链接：戳这里参考博客：戳这里  先备知识 LGV 算法 (Lindström–Gessel–Viennot lemma)  从{a1,a2,a3,...an}到{b1,b2,...bn}的不相交路径的条数">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/23/1/1-6.png">
 
 
 
@@ -119,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/20/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/23/1/"/>
 
 
 
 
 
-  <title>Hello World | zmin</title>
+  <title>2018牛客网暑期多校 A-AMonotonic Matrix【LGV算法】 | zmin</title>
   
 
 
@@ -262,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/20/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/23/1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zmin">
@@ -279,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">2018牛客网暑期多校 A-AMonotonic Matrix【LGV算法】</h1>
         
 
         <div class="post-meta">
@@ -291,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-20T22:25:03+08:00">
-                2018-07-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-23T22:09:53+08:00">
+                2018-07-23
               </time>
             
 
@@ -301,6 +306,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/02-数学-∞-其他/" itemprop="url" rel="index">
+                    <span itemprop="name">02.数学 - (∞)其他</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -329,16 +356,27 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <p>题目链接：<a href="https://www.nowcoder.com/acm/contest/139/A" target="_blank" rel="noopener">戳这里</a><br>参考博客：<a href="https://blog.csdn.net/weixin_38686780/article/details/81140392" target="_blank" rel="noopener">戳这里</a></p>
+<blockquote>
+<p>先备知识</p>
+<p>LGV 算法 (Lindström–Gessel–Viennot lemma) </p>
+<p><code>从{a1,a2,a3,...an}到{b1,b2,...bn}的不相交路径的条数</code><a id="more"></a></p>
+<p><img src="/2018/07/23/1/1-6.png" alt=""></p>
+<p>求以上矩阵的行列式，其中 e(a,b) 是从a到b的方法数，带入求行列式即可得到(a1,a2,…an) 到 (b1,b2,…bn) 的所有不相交路径的种数</p>
+</blockquote>
+<blockquote>
+<p>题意：求有多少个n*m的矩阵满足</p>
+<ul>
+<li>Ai, j ∈ {0, 1, 2} for all 1 ≤ i ≤ n, 1 ≤ j ≤ m. </li>
+<li>Ai, j ≤ Ai + 1, j for all 1 ≤ i &lt; n, 1 ≤ j ≤ m. </li>
+<li>Ai, j ≤ Ai, j + 1 for all 1 ≤ i ≤ n, 1 ≤ j &lt; m.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>解题思路：<br><img src="/2018/07/23/1/1-4.png" alt=""><br>如上图所示，两条红线分别是01和12的分界线，他们是(n, 0)到(0，m)的两条可重合但不相交的路径<br>分界线以及分界线以上的点是一种，分界线下是一种,平移其中一条变成(n-1, -1)到(-1，m-1)则：<br>起点$$a1,a2=(n,0),(n-1,-1)$$<br>终点$$b1,b2=(0,m),(-1,m-1)$$<br><img src="/2018/07/23/1/1-7.jpg" alt=""></p>
+</blockquote>
+<p>附ac代码：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line"><span class="keyword">const</span> ll mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">2</span> * <span class="number">1e3</span> + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxx = <span class="number">2</span> * <span class="number">1e3</span>;</span><br><span class="line">ll c[maxn][maxn];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    c[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; maxn; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        c[i][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            c[i][j] = (c[i - <span class="number">1</span>][j - <span class="number">1</span>] + c[i - <span class="number">1</span>][j]) % mod;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ll <span class="title">mmod</span><span class="params">(ll a, ll b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ll res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(b)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(b&amp;<span class="number">1</span>) res = (res + a) % mod;</span><br><span class="line">        b &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">        a = (a + a) % mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ll <span class="title">pmod</span><span class="params">(ll a, ll b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ll res = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(b)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(b&amp;<span class="number">1</span>) res = mmod(res, a) % mod;</span><br><span class="line">        b &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">        a = mmod(a, a) % mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    init();</span><br><span class="line">    <span class="keyword">int</span> n, m;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;n, &amp;m))</span><br><span class="line">    &#123;</span><br><span class="line">        ll ans = (pmod(c[n + m][n], <span class="number">2</span>) - mmod(c[n + m][m - <span class="number">1</span>], c[n + m][n - <span class="number">1</span>]) + mod) % mod;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -353,6 +391,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/LGV算法/" rel="tag"># LGV算法</a>
+          
+        </div>
+      
 
       
       
@@ -362,14 +406,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/23/关于ddijkstra判断负环的思考/" rel="next" title="关于dijkstra判断负环的思考">
+                <i class="fa fa-chevron-left"></i> 关于dijkstra判断负环的思考
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/22/J-Different Integers 【离线+树状数组】/" rel="prev" title="2018牛客网暑期多校 J-Different Integers 【离线+树状数组】">
-                2018牛客网暑期多校 J-Different Integers 【离线+树状数组】 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/23/D-Two-Graphs/" rel="prev" title="2018牛客网暑期多校 D-Two Graphs 【构造+全排列】">
+                2018牛客网暑期多校 D-Two Graphs 【构造+全排列】 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -422,17 +470,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -522,22 +561,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
